@@ -24,7 +24,16 @@
     </div>
 </div>
 {% endfor %}
-
+<nav>
+  <ul class="pager">
+  {% if buildings.has_previous %}
+    <li><a href="{% url "paginated_projects" buildings.previous_page_number %}">Previous</a></li>
+  {% endif %}
+  {% if buildings.has_next %}
+    <li><a href="{% url "paginated_projects" buildings.next_page_number %}">Next</a></li>
+  {% endif %}
+  </ul>
+</nav>
 </div>
 
 

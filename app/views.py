@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from .models import Building
+from django.core.paginator import Paginator
 
 # Create your views here.
 
@@ -17,9 +18,14 @@ def contact(request):
 def cost(request):
     return render(request, 'cost.html')
 
-def projects(request):
+
+
+
+def paginated_projects(request, page=1):
     buildings = Building.objects.all()
-    return render(request, 'projects.html', {'buildings': buildings})
+    paginator = Paginator(buildings, POSTS_PER_PAGE)
+    page = paginator.page(page)
+    return render(request, 'projects.html', {'buildings': page})
 
 def project(request, pk):
     building = Building.objects.get(pk=pk)
