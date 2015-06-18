@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block meta_title %}
+Контакты
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container top">
+        <h1>Проекты</h1>
+
+
+{% if building %}
+
+<div class="row">
+    <div class="thumbnail">
+      <img src="{{ building.photo.url }}" alt="">
+      <div class="caption">
+        <h3>{{ building.title }}</h3>
+        <p>{{ building.description }}</p>
+        <p><a href="#"  class="btn btn-primary" role="button">Детальніше</a></p>
+      </div>
+    </div>
+</div>
+{% endif %}
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block meta_title %}
+Главная
+{% endblock %}
+
+{% block content %}
+
+ <!--Слайды-->
+    <!--Значки-->
+    <div id="carousel" class="carousel slide top">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!--Картинки слайдов-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{% static "img/proekt1.jpg"%}" width="1900" alt="">
+                <div class="carousel-caption">
+                    <h3 class="text">Проектирование домов, коттеджей, проект дома под ключ</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static "img/proekt1.jpg"%}"  width="1900"  alt="">
+                <div class="carousel-caption">
+                    <h3 class="text">Проектирование домов, коттеджей, проект дома под ключ</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static "img/proekt1.jpg" %}"  width="1900"  alt="">
+                <div class="carousel-caption">
+                    <h3 class="text">Проектирование домов, коттеджей, проект дома под ключ</h3>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--Cтрелки переключание-->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+  <!--Информация-->
+    <div class="container">
+        <h1>Главная страница</h1>
+        <h2>Первая статья</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Вторая статья</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <h1>Главная страница</h1>
+        <h2>Первая статья</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Вторая статья</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+
+{% endblock %}
