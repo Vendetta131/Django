@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% block meta_title %}
-Контакты
+Проект
 {% endblock %}
 
 {% block content %}
 
 
 <div class="container top">
-        <h1>Проекты</h1>
+        <h1>Проект</h1>
 
 
 {% if building %}
 
-<div class="row">
-    <div class="thumbnail">
-      <img src="{{ building.photo.url }}" alt="">
+<div class="one">
+   	  <h2>{{ building.title }}</h3>
+      <img src="{{ building.photo.url }}" alt="" width="600px" class="leftimg">
       <div class="caption">
-        <h3>{{ building.title }}</h3>
+        <h3>Информация о проекте</h4>
         <p>{{ building.description }}</p>
       </div>
-    </div>
 </div>
 {% endif %}
 

@@ -2,6 +2,37 @@
 	margin-top: 50px;
 }
 
-.container{
+.ot{
 	width: 1000px;
 }
+
+.one{
+	margin-left: 50px;
+}
+
+
+.proj{
+	width: 300px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.text{
+	 text-indent:50px;
+}
+
+.rightimg  {
+    float: right; 
+    margin: 7px 0 7px 7px;
+ }
+
+ .leftimg {
+    float:left;
+    margin-right: 50px;
+}
+
+p.clip {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }

@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact/', 'app.views.contact', name='contact'),
     url(r'^cost/', 'app.views.cost', name='cost'),
-    #url(r'^projects/', 'app.views.projects', name='projects'),
+    url(r'^fasad/', 'app.views.fasad', name='fasad'),
     url(r'^projects/(?P<page>\d+)$', 'app.views.paginated_projects', name='paginated_projects'),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
     url(r'^project/(?P<pk>\d+)$', 'app.views.project', name='project'),

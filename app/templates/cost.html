@@ -1,14 +1,106 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% block meta_title %}
-Контакты
+Цены
 {% endblock %}
 
 {% block content %}
 
 
-<div class="container top">
-        <h1>Цены</h1>
+<div class="container top tsen">
+    <div class="page-header">
+ 		<h1>Цены</h1>
+	</div>
+	<!--Первый-->
+	<div class="panel-heading"><h2>Эскизный проект ЭП<h2></div>
+	<table class="table table-hover">
+		<tbody>
+			<tr>
+				<td>До 150 м2</td>
+				<td>3000 грн</td>
+			</tr>
+			<tr>
+				<td>от 150 м2</td>
+				<td>25 грн/м2</td>
+		</tbody>
+	</table>
+	<!--Второй-->
+	<div class="panel-heading"><h2>Рабочий проект РП:<h2></div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>АРХИТЕКТУРНЫЙ "Раздел АР :</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>до 100 м2</td>
+				<td>3000 грн  за раздел</td>
+			</tr>
+			<tr>
+				<td>от 100 м2 до 200 м2</td>
+				<td>35 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 200 м2 до 300 м2</td>
+				<td>30 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 300 м2 до 600 м2</td>
+				<td>25 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 600 м2</td>
+				<td>20 грн/м2</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>КОНСТРУКТИВНЫЙ "Раздел КР : </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>до 100 м2</td>
+				<td>3000 грн  за раздел</td>
+			</tr>
+			<tr>
+				<td>от 100 м2 до 200 м2</td>
+				<td>35 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 200 м2 до 300 м2</td>
+				<td>30 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 300 м2 до 600 м2</td>
+				<td>25 грн/м2</td>
+			</tr>
+			<tr>
+				<td>от 600 м2</td>
+				<td>20 грн/м2</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>"ИНЖЕНЕРНЫЙ "Раздел" ЭЛ, ВК, ОВ : </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>до 100 м2</td>
+				<td>3000 грн  за все раздел</td>
+			</tr>
+			<tr>
+				<td>от 100 м2</td>
+				<td>15 грн/м2  за каждый раздел ЭЛ, ВК, ОВ </td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 
 
