@@ -4717,14 +4717,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
+  background-color: #086CA2;
   border: 1px solid #ddd;
+  color: #fff;
   border-radius: 15px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  background-color: #fff;
+  color: #086CA2;
 }
 .pager .next > a,
 .pager .next > span {

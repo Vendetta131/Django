@@ -6,8 +6,7 @@ from django.core.paginator import Paginator
 
 # Create your views here.
 
-POSTS_PER_PAGE = 6
-
+POSTS_PER_PAGE = 15
 def home(request):
     return render(request, 'main.html')
 
@@ -24,9 +23,11 @@ def fasad(request):
 def paginated_projects(request, page=1):
     buildings = Building.objects.all()
     paginator = Paginator(buildings, POSTS_PER_PAGE)
+    st = page
     page = paginator.page(page)
-    return render(request, 'projects.html', {'buildings': page})
+    return render(request, 'projects.html', {'buildings': page,'st': st})
 
 def project(request, pk):
     building = Building.objects.get(pk=pk)
+    
     return render(request, "project.html", {'building': building})

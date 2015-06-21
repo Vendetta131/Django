@@ -1,23 +1,23 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% block meta_title %}
-Контакты
+Проекты
 {% endblock %}
 
 {% block content %}
 
 
-<div class="container top">
+<div class="container top pr">
         <h1>Проекты</h1>
 
-<ul class="progg">
+<ul class="">
 {% for building in buildings %}
 <li class="proj">
     <div class="thumbnail">
       <img src="{{ building.photo.url }}" width="300px" alt="">
       <div class="caption">
         <h3>{{ building.title }}</h3>
-        <p class="clip">{{ building.description }}</p>
+        <p class="clip">{{ building.description|safe }}</p>
         <p><a href="{% url "project" building.pk %}" class="btn btn-primary" role="button">Детальніше</a></p>
       </div>
     </div>
@@ -29,6 +29,7 @@
   {% if buildings.has_previous %}
     <li><a href="{% url "paginated_projects" buildings.previous_page_number %}">Previous</a></li>
   {% endif %}
+    <li>{{st}}</li>
   {% if buildings.has_next %}
     <li><a href="{% url "paginated_projects" buildings.next_page_number %}">Next</a></li>
   {% endif %}
