@@ -6,6 +6,8 @@
 	width: 1200px;
 }
 
+
+
 .one{
 	margin-left: 50px;
 }
@@ -43,23 +45,61 @@ p.clip {
   margin-right: 0px;
 }
 
-/*@media (min-width: 1200px) {
-  img {
-    max-width: 100%;
+.mob{
+    width: 600px;
   }
 
-@media (min-width: 920px) {
-  img {
-    max-width: 64%;
-  }
+@media screen and (max-width: 1200px) {
+.mob {
+    width: 600px;
+  }  
+}
 
-@media (min-width: 420px) {
-  img {
-    max-width: 24%;
+@media screen and (max-width: 920px) {
+.mob {
+    width: 500px;
   }
 }
- Для больших устройств (ноуты, пк)
-@media (min-width: 760px) {
-  img {
-    max-width: 48%;
-  } */
+
+@media screen and (max-width: 760px) {
+.mob {
+    width: 400px
+  } 
+}
+
+@media screen and (max-width: 420px) {
+.mob {
+    width: 300px
+  }
+}
+
+.ph{
+    width: 500px;
+  }
+
+@media screen and (max-width: 1200px) {
+.ph {
+    width: 500px;
+  }  
+}
+
+@media screen and (max-width: 920px) {
+.ph {
+    width: 450px;
+    float:center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+.ph {
+    width: 400px;
+    float:center;
+  } 
+}
+
+@media screen and (max-width: 420px) {
+.ph {
+    width: 300px;
+    float:center;
+  }
+}
