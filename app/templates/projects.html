@@ -14,11 +14,11 @@
 {% for building in buildings %}
 <li class="proj">
     <div class="thumbnail">
-      <img src="{{ building.photo.url }}" width="300px" alt="">
+      <img src="{{ building.glav.url }}" width="300px" alt="">
       <div class="caption">
         <h3>{{ building.title }}</h3>
         <p class="clip">{{ building.description|safe }}</p>
-        <p><a href="{% url "project" building.pk %}" class="btn btn-primary" role="button">Детальніше</a></p>
+        <p><a href="{% url "project" building.pk %}" class="btn btn-primary" role="button">Детальнее</a></p>
       </div>
     </div>
 </li>

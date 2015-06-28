@@ -25,15 +25,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand main" href="{% url "home" %}">Наш проект</a>
+                <img src="{% static "img/1.jpg" %}" class="n1" height="50px">
+                <a class="navbar-brand main text" href="{% url "home" %}" >Наш проект</a>
             </div>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav main">
-                    <li><a href="{% url "home" %}">Головна сторінка</a></li>
+                    <li><a href="{% url "home" %}">Главная страница</a></li>
                     <li><a href="{% url "fasad" %}">Утепеление фасадов</a></li>
                     <li><a href="{% url "paginated_projects" 1 %}">Проекты</a></li>
                     <li><a href="{% url "cost" %}">Цены</a></li>
-                    <li><a href="{% url "contact" %}">Контакти</a></li>
+                    <li><a href="{% url "contact" %}">Контакты</a></li>
                 </ul>
             </div>
         </div>

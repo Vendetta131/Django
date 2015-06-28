@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from .models import Building
+from .models import Photo
 from django.core.paginator import Paginator
 
 # Create your views here.
@@ -29,5 +30,27 @@ def paginated_projects(request, page=1):
 
 def project(request, pk):
     building = Building.objects.get(pk=pk)
+    photo = Photo.objects.get(sborka=building)
+    pho = building.glav.url
     
-    return render(request, "project.html", {'building': building})
+    return render(request, "project.html", {'building': building,'photo': photo,'pho':pho})
+
+def photo(request, pk, ph):
+    building = Building.objects.get(pk=pk)
+    photo = Photo.objects.get(sborka=building)
+    if ph=='1':
+        pho = building.glav.url
+    elif ph=='2':
+        pho = photo.one.url
+    elif ph=='3':
+        pho = photo.second.url
+    elif ph=='4':
+        pho = photo.third.url
+    elif ph=='5':
+        pho = photo.fourth.url
+    elif ph=='6':
+        pho = photo.fifth.url 
+    elif ph=='7':
+        pho = photo.sixth.url
+
+    return render(request, "project.html", {'building': building,'photo': photo,'pho': pho})

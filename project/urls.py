@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^projects/(?P<page>\d+)$', 'app.views.paginated_projects', name='paginated_projects'),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
     url(r'^project/(?P<pk>\d+)$', 'app.views.project', name='project'),
+    url(r'^project/(?P<pk>\d+)/(?P<ph>\d+)$', 'app.views.photo', name='photo'),
 ]

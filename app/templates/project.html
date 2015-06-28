@@ -15,11 +15,46 @@
 
 <div class="one">
    	  <h2>{{ building.title }}</h3>
-      <img src="{{ building.photo.url }}" alt="" width="600px" class="leftimg mob">
       <div class="caption">
-        <h3>Информация о проекте</h4>
-        <p>{{ building.description|safe  }}</p>
-      </div>
+        <img src="{{ pho }}" alt="" class="leftimg proba">
+        <div class="media small">
+          {% if building.glav %}
+        <a class="pull-left" href="{% url "photo" building.pk 1 %}">
+            <img class="media-object" src="{{ building.glav.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+          {% if photo.one %}
+        <a class="pull-left" href="{% url "photo" building.pk 2 %}">
+            <img class="media-object" src="{{ photo.one.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        {% if photo.second %}
+        <a class="pull-left" href="{% url "photo" building.pk 3 %}">
+            <img class="media-object" src="{{ photo.second.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        {% if photo.third %}
+        <a class="pull-left" href="{% url "photo" building.pk 4 %}">
+            <img class="media-object" src="{{ photo.third.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        {% if photo.fourth %}
+        <a class="pull-left" href="{% url "photo" building.pk 5 %}">
+            <img class="media-object" src="{{ photo.fourth.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        {% if photo.fifth %}
+        <a class="pull-left" href="{% url "photo" building.pk 6 %}">
+            <img class="media-object" src="{{ photo.fifth.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        {% if photo.sixth %}
+        <a class="pull-left" href="{% url "photo" building.pk 7 %}">
+            <img class="media-object" src="{{ photo.sixth.url }}" width="64px" height="64px" alt="">
+        </a>
+        {% endif %}
+        <h2 >Информация о проекте</h2>
+        <p >{{ building.description|safe  }}</p>
 </div>
 {% endif %}
 

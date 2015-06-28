@@ -6,12 +6,27 @@
 	width: 1200px;
 }
 
-
+.n1{
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
 
 .one{
 	margin-left: 50px;
 }
 
+.info{
+  float: left;
+  width: 800px;
+  height: 400px;
+}
+
+.small{
+  float:left;
+  margin: 0;
+  margin-right:100px; 
+}
 
 .proj{
 	width: 300px;
@@ -30,7 +45,7 @@
 
  .leftimg {
     float:left;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 p.clip {
@@ -102,4 +117,53 @@ p.clip {
     width: 300px;
     float:center;
   }
+}
+
+.proba{
+    width: 350px;
+  }
+
+@media screen and (max-width: 1200px) {
+.proba {
+    width: 350px;
+  }  
+}
+
+@media screen and (max-width: 920px) {
+.proba {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+.proba {
+    width: 300px
+  } 
+}
+
+@media screen and (max-width: 420px) {
+.proba {
+    width: 250px
+  }
+}
+
+.first{
+  float: left;
+  border-radius: 10px;
+  width: 350px;
+  height: 300px;
+}
+
+.second{
+  float: right;
+  border-radius: 10px;
+  width: 350px;
+  height:200px;
+}
+
+.third{
+  float: right;
+  border-radius: 10px;
+  width: 350px;
+  height:400px;
 }
