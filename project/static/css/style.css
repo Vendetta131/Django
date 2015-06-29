@@ -58,6 +58,7 @@ p.clip {
 
 .pr{
   margin-right: 0px;
+  margin-left: 50px;
 }
 
 .mob{
@@ -166,4 +167,27 @@ p.clip {
   border-radius: 10px;
   width: 350px;
   height:400px;
+<<<<<<< HEAD
+}
+
+@media only screen and (max-width: 720px) {
+    .slaid {
+        display: none;
+    }
+=======
+>>>>>>> ba925075771bc317304bc7bae04e681d4cd22c26
+}
+
+@media screen and (max-width: 1200px) {
+.pr {
+    margin-right: 0px;
+    margin-left: 50px;
+  }  
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2000px)  {
+.pr {
+    margin-right: 0px;
+    margin-left: 300px;
+  }  
 }

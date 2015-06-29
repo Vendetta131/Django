@@ -11,6 +11,8 @@ POSTS_PER_PAGE = 15
 def home(request):
     return render(request, 'main.html')
 
+def google(request):
+    return render(request, 'googlee1c6b9a025415a86.html')
 
 def contact(request):
     return render(request, 'contact.html')

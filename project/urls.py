@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
     url(r'^project/(?P<pk>\d+)$', 'app.views.project', name='project'),
     url(r'^project/(?P<pk>\d+)/(?P<ph>\d+)$', 'app.views.photo', name='photo'),
+    url(r'^googlee1c6b9a025415a86.html', 'app.views.google', name='google'),
 ]
