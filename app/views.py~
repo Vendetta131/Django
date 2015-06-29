@@ -8,11 +8,6 @@ from django.core.paginator import Paginator
 # Create your views here.
 
 POSTS_PER_PAGE = 15
-
-def sitemap(request):
-    f = open('project/static/sitemap.xml')
-    return HttpResponse(f)
-
 def home(request):
     return render(request, 'main.html')
 
