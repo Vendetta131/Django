@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% block meta_title %}
-Наш проект. Проектирование домов и коттеджей под ключ.
+Главная
 {% endblock %}
 
 {% block content %}

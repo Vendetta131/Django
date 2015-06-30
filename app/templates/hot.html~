@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% block meta_title %}
-Утепленние фасадов многоэтажных зданий.
+Утепленние фасадов
 {% endblock %}
 
 {% block content %}
